@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Formulário de Cadastro</h2>
+    <form action="#" method="post" style="text-align: center;">
+        <table align="center">
+            <tr>
+                <td><label for="name">Nome:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Senha:</label></td>
+                <td><input type="password" id="password" name="password" required minlength="8"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Data de Nascimento:</label></td>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <td><label>Gênero:</label></td>
+                <td>
+                    <label><input type="radio" name="gender" value="masculino" required> Masculino</label>
+                    <label><input type="radio" name="gender" value="feminino"> Feminino</label>
+                    <label><input type="radio" name="gender" value="outro"> Outro</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Interesses:</label></td>
+                <td>
+                    <label><input type="checkbox" name="interests" value="tecnologia"> Tecnologia</label><br>
+                    <label><input type="checkbox" name="interests" value="esportes"> Esportes</label><br>
+                    <label><input type="checkbox" name="interests" value="arte"> Arte</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="city">Cidade:</label></td>
+                <td>
+                    <select id="city" name="city" required>
+                        <option value="">Selecione uma cidade</option>
+			<option value="maceio">Maceió</option>
+                        <option value="sao_paulo">São Paulo</option>
+                        <option value="rio_de_janeiro">Rio de Janeiro</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="quantity">Quantidade de Produtos:</label></td>
+                <td><input type="number" id="quantity" name="quantity" min="1" required></td>
+            </tr>
+            <tr>
+                <td><label for="observations">Observações Adicionais:</label></td>
+                <td><textarea id="observations" name="observations" rows="4" placeholder="Digite suas observações aqui..."></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">Cadastrar</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
